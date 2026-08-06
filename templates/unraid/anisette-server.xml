@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>anisette-server</Name>
+  <Repository>ghcr.io/yayk0/anisette-server:latest</Repository>
+  <Registry>https://github.com/yayk0/anisette-server/pkgs/container/anisette-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/yayk0/anisette-server/issues</Support>
+  <Project>https://github.com/yayk0/anisette-server</Project>
+  <Overview>Self-hosted SideStore-compatible Anisette V3 server, packaged for Docker and Unraid. Upstream service implementation: Dadoum/anisette-v3-server.</Overview>
+  <Category>Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:6969]/v3/client_info</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/yayk0/anisette-server/main/templates/unraid/anisette-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/SideStore/SideStore/develop/SideStore/Assets.xcassets/AppIcon.appiconset/180.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="6969" Default="6969" Mode="tcp" Description="Anisette Server HTTP port." Type="Port" Display="always" Required="true" Mask="false">6969</Config>
+  <Config Name="Persistent Data" Target="/home/Alcoholic/.config/anisette-v3/lib/" Default="/mnt/user/appdata/anisette-server/lib/" Mode="rw" Description="Persistent Anisette/ADI state. Do not delete unless you intend to reprovision." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/anisette-server/lib/</Config>
+</Container>
