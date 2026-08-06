@@ -1,0 +1,9 @@
+.git
+.github
+.vscode
+README.md
+docs
+templates
+LICENSE
+docker-compose.yml
+*.log
